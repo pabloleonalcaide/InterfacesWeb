@@ -1,0 +1,64 @@
+body{
+	/* 14 rem --> trabaja sobre root*/
+	font-family: sans-serif;
+	background: #373737;
+}
+header h1{
+	text-align: center;
+	color: #999999;
+}
+nav{
+	width: 40%;
+	margin:0 auto;
+}
+nav ul{
+	width:100%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+
+}
+nav > ul > li{
+	display:inline-block;	
+	float:left;
+}
+nav ul li{
+	position:relative;
+}
+nav li a{
+	background: #909090;
+	color: #222;
+	display:block;
+	border: 1px solid;
+	padding: 10px 12px;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	background: #999999;
+}
+
+nav li ul{
+	display:none;
+	position: absolute; /*Se situa en la posicion 0,0 en referencia al inmediatamente relative superior*/
+	min-width: 140px;
+}
+
+nav li:hover >ul{
+	display: block;
+}
+
+nav li ul li ul{
+	right:-140px;
+	top:0;
+}
+
+nav ul li .flecha{
+	font-size: 9px;
+	margin-left:2px;
+	display:none;
+}
+/* Aplicamos a todos los elementos que no sean último*/
+nav ul li a:not(:last-child) .flecha{
+	display:inline;
+}

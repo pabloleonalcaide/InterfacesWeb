@@ -1,0 +1,111 @@
+body{
+	height: 1000px;
+	margin: 0;
+	padding: 0;
+	background-color: #96858F; 
+}
+header{
+	text-align: center;
+	width: 100%;
+	height: 10%;
+	background-color: #6D7993;
+	box-shadow: 2px 2px 2px #6D7999;
+}
+nav{
+	background-color: #9099A2;
+	width:100%;
+	height:5%;
+}
+nav ul{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+}
+nav ul li{
+	margin:0 auto;
+	margin-left:10px;
+	text-align: center;
+	height: 30px;
+	padding:2px;
+	background-color: #6D7993;
+	border: 1px solid #6D7993;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+main {
+    display: inline-flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#container main article{
+	margin-top: 5px;
+    width: 25%;
+	border: 1px solid #909090;
+	overflow: hidden;
+}
+#container aside{
+    border: 1px solid #9099a2;
+    background-color: #9099a2;	
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    height: 500px;
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+#container  aside  article{
+	border: 1px solid #9990a2;	
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+aside article h3{
+	width: 100%;
+}
+#container  aside  article  img {
+	width: 100px;
+	margin: 0 5px 5px 5px;
+	height: 100px;
+	border: 1px solid gray;
+	background-color: gray;
+}
+footer{
+	display: inline-flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	width:100%;
+	justify-content: space-between;
+	order:4;
+	margin-top:5px;
+	background-color: #9099a2;
+	text-align:center;
+}
+footer h2{
+	width: 100%;
+}
+footer #rrss{
+	text-align: right;
+	margin:3px;
+}
+footer #rrss img{
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	border:1px solid #96858F;
+	text-align: center;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+#twitter{background-color: lightblue;}
+#facebook{background-color: blue;}
+#linkedin{background-color: gray;}
+#googlePlus{background-color: red;}
